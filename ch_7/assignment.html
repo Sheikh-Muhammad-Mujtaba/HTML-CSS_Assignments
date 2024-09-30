@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ch 7 Forms</title>
+  </head>
+  <style>
+    fieldset {
+      padding: 20px;
+      margin: 20px;
+    }
+
+    div {
+        margin-bottom: 10px;
+    }
+    
+  </style>
+  <body>
+    <h1>Ch #7-Forms:</h1>
+    <form action="#" method="post">
+      <!-- User Details Section -->
+      <fieldset>
+        <legend>Your Details:</legend>
+        <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+    </div>  
+    </fieldset>
+
+      <!-- User Review Section -->
+      <fieldset>
+        <legend>Your Review:</legend>
+        <div>
+        <label for="how-did-you-hear">How did you hear about us?</label>
+        <select id="how-did-you-hear" name="source">
+          <option value="google">Google</option>
+          <option value="social_media">Social Media</option>
+          <option value="friend">Friend</option>
+        </select>
+    </div>
+
+        <label>Would you visit again?</label>
+<div>
+        <label><input type="radio" name="visit-again" value="yes" /> Yes</label>
+        <label><input type="radio" name="visit-again" value="no" /> No</label>
+        <label><input type="radio" name="visit-again" value="maybe" /> Maybe</label>
+    </div>
+    
+        <label for="comments">Comments:</label>
+        <div><textarea id="comments" name="comments" rows="4"></textarea></div>
+
+        <label
+          ><input type="checkbox" name="email-updates" /> Sign me up for email
+          updates</label
+        >
+        <div>
+        <!-- Submit Button -->
+        <input type="submit" value="Submit review" />
+    </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
