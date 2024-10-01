@@ -1,4 +1,4 @@
-# Periodic Table Example
+# Chapter 6: Periodic Table Example
 
 This HTML page showcases a **Periodic Table** using various HTML and CSS techniques to display the elements in a visually appealing manner. The project illustrates how to effectively use HTML to create a structured representation of the periodic table.
 
@@ -14,9 +14,7 @@ This HTML page showcases a **Periodic Table** using various HTML and CSS techniq
 - **Table Row (`<tr>`)**: Used to define rows in the table for each period of elements.
 - **Table Data (`<td>`)**: Represents individual cells for each element, containing the atomic number, symbol, and name.
 
-### 3. Color-Coding Elements
 
-- Elements are categorized by background colors using CSS classes, providing a visual distinction between different groups (e.g., metals, nonmetals, noble gases).
 
 ### Example Structure:
 
@@ -44,36 +42,9 @@ This HTML page showcases a **Periodic Table** using various HTML and CSS techniq
 ## CSS Styles Example
 
 ```css
-body {
-  color: #333;
-  background-color: #f0f0f0;
-}
-
-h1,
-h2 {
-  text-align: center;
-}
-
-table {
-  border: 2px solid black;
-  border-collapse: separate;
-  margin: auto;
-  width: 90%;
-}
-
-tr {
-  border-spacing: 2px;
-  margin: auto;
-  width: 90%;
-}
-
 td {
-  border: 2px solid #000000;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  vertical-align: middle;
-}
+        border: 2px solid #000000;
+      }
 ```
 
 ## Key HTML Tags Used
