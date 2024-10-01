@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <style>
+      fieldset {
+        padding: 20px;
+        margin: 20px;
+      }
+
+      div {
+        margin-bottom: 10px;
+      }
+
+      iframe {
+        width: 97%;
+        height: 450px;
+        align-self: center;
+        margin: 20px;
+        margin-bottom: 50px;
+      }
+    </style>
+    <link rel="stylesheet" href="global.css" />
+  </head>
+  <body>
+    <!-- Header starts -->
+    <header>
+      <!-- Logo section -->
+      <div class="logo"><span>pana</span><span>cloud</span></div>
+
+      <!-- Navigation links -->
+      <nav>
+        <ul>
+          <li><a href="./main.html">HOME</a></li>
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a href="./portfolio.html">PORTFOLIO</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <form action="#" method="post">
+      <!-- User Details Section -->
+      <fieldset>
+        <legend>Your Details:</legend>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+      </fieldset>
+
+      <!-- User Review Section -->
+      <fieldset>
+        <legend>Your Review:</legend>
+        <div>
+          <label for="how-did-you-hear">How did you hear about us?</label>
+          <select id="how-did-you-hear" name="source">
+            <option value="google">Google</option>
+            <option value="social_media">Social Media</option>
+            <option value="friend">Friend</option>
+          </select>
+        </div>
+
+        <label>Would you visit again?</label>
+        <div>
+          <label
+            ><input type="radio" name="visit-again" value="yes" /> Yes</label
+          >
+          <label><input type="radio" name="visit-again" value="no" /> No</label>
+          <label
+            ><input type="radio" name="visit-again" value="maybe" />
+            Maybe</label
+          >
+        </div>
+
+        <label for="comments">Comments:</label>
+        <div><textarea id="comments" name="comments" rows="4"></textarea></div>
+
+        <label
+          ><input type="checkbox" name="email-updates" /> Sign me up for email
+          updates</label
+        >
+        <div>
+          <!-- Submit Button -->
+          <input type="submit" value="Submit review" />
+        </div>
+      </fieldset>
+    </form>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.380657233497!2d67.02340577414058!3d24.850845445644545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e75a28531d1%3A0x412558657f5ff4a8!2sGovernor%20House%20Sindh!5e0!3m2!1sen!2s!4v1727735858987!5m2!1sen!2s"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <footer>
+      <p>Copyright © 2019. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
