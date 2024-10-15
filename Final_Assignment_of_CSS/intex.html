@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Final Assignment</title>
+
+
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1lmwvjcG4zT8Xh1Mj5PHyXKN2E0vWVhxB7+quI4tfDMMfq8Pqai64zN+5kJo+I8M" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.5/jquery-jvectormap.min.css" />
+
+
+  <!-- CND icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="headOne">
+      <a href="https://facebook.com" target="_blank">
+        <i class="fa-brands fa-facebook-f circle" style="
+             background: rgb(48, 48, 48); color: rgb(171, 172, 173);"></i>
+      </a>
+      <a href="https://facebook.com" target="_blank">
+        <i class="fa-brands fa-twitter circle" style="
+             background: rgb(48, 48, 48); color: rgb(171, 172, 173)"></i>
+        <a href="https://facebook.com" target="_blank">
+          <i class="fa-brands fa-google-plus-g circle" style="
+             background: rgb(48, 48, 48); color: rgb(171, 172, 173)"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank">
+          <i class="fa-brands fa-linkedin-in circle" style="
+             background: rgb(48, 48, 48); color: rgb(171, 172, 173)"></i>
+        </a>
+        <a href="https://google.com" target="_blank">
+          <i class="fab fa-youtube circle" style="
+             background: rgb(48, 48, 48); color: rgb(171, 172, 173)"></i>
+        </a>
+    </div>
+
+    <div style="color: white;" class="headTwo">
+      <a href="tel:+92304366719" target="_blank">
+        <p>
+          <span><i class="fa-solid fa-phone" style="color: rgb(140, 197, 63);"></i></span> +92(304)36-6719
+        </p>
+      </a>
+      <a href="tel:+923170113001" target="_blank">
+        <p>
+          <span><i class="fa-solid fa-phone" style="color: rgb(140, 197, 63);"></i></span> +92(317)011-3001
+        </p>
+      </a>
+      <button>
+        CALL ME BACK
+      </button>
+    </div>
+
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./images/panacloud.png" alt="panacloud" height="70px">
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul class="navLinks">
+      <li><a href="">WHY US</a></li>
+      <li><a href="">ABOUT</a></li>
+      <li><a href="">SERVICES</a></li>
+      <li><a href="">PORTFOLIO</a></li>
+      <li><a href="">PROCESS</a></li>
+      <li><a href="">REVIEWS</a></li>
+      <li><a href="">OUR SKILLS</a></li>
+      <li><a href="">CONTACT US</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero  -->
+  <div class="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+
+        <h1>Welcome to Our Service</h1>
+        <p>Your satisfaction is our priority. Explore our services today!</p>
+        <button class="heroBtn" style="padding: 8px 3%;font-size: 20px;">Get Started</button>
+      </div>
+      <div class="carousel-item">
+
+        <h1>Quality Assurance</h1>
+        <p>We ensure top quality in every project. Trust us with your needs.</p>
+        <button class="heroBtn">Learn More</button>
+      </div>
+      <div class="carousel-item">
+
+        <h1>Join Us</h1>
+        <p>Become a part of our growing community. We're excited to have you!</p>
+        <button class="heroBtn">Sign Up</button>
+      </div>
+    </div>
+    <div class="carousel-dots">
+      <span class="dot active" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </div>
+
+  <!-- advantages -->
+  <div class="adv">
+    <div class="advx">
+      <h1>OUR <span style="color: rgb(102, 142, 25);">ADVANTAGES</span></h1>
+      <p style="color: rgb(154, 164, 179);">Here are the advantages of our services: we provide cutting-edge solutions,
+        ensure exceptional quality, draw from extensive experience, prioritize client satisfaction, and offer dependable
+        support.</p>
+    </div>
+
+    <div class="serAdv">
+      <!-- 1 -->
+      <div class="mainX">
+        <div
+          style="width: 150px; height: 150px; background: rgb(242, 242, 242); border-radius: 50%; display: flex; justify-content: center; align-items: center;  margin-bottom: 10px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-lightbulb">
+            <!-- Top part (default color) -->
+            <path
+              d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+            <!-- Red lines (lower part) -->
+            <path d="M9 18h6" style="stroke:rgb(142, 198, 63);" />
+            <path d="M10 22h4" style="stroke:rgb(142, 198, 63);" />
+          </svg>
+
+        </div>
+        <h1 style="font-size: 20px;">INNOVATION</h1>
+        <p style="font-size: 14px; line-height: 1.1; color: rgb(163, 178, 201);">Pushing boundaries with our
+          forward-thinking solutions.</p>
+      </div>
+      <!-- 2 -->
+      <div class="mainX">
+        <div
+          style="width: 150px; height: 150px; background: rgb(242, 242, 242); border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-thumbs-up">
+            <path d="M7 10v12" />
+            <path
+              d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z" />
+            <path d="M7 10v12H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13"
+              fill="rgb(142, 198, 63)" />
+          </svg>
+
+        </div>
+        <h1 style="font-size: 20px;">QUALITY</h1>
+        <p style="font-size: 14px; line-height: 1.1; color: rgb(163, 178, 201);">Delivering excellence in every detail
+          for superior outcomes.</p>
+      </div>
+      <!-- 3 -->
+      <div class="mainX">
+        <div
+          style="width: 150px; height: 150px; background: rgb(242, 242, 242); border-radius: 50%; display: flex; justify-content: center; align-items: center;  margin-bottom: 10px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 64 64">
+            <!-- Outer black circle -->
+            <circle cx="32" cy="32" r="31" stroke="black" stroke-width="2" fill="transparent" />
+            <circle cx="32" cy="32" r="25" stroke="black" stroke-width="2" fill="transparent" />
+            <!-- Inner red circle -->
+            <circle cx="32" cy="32" r="28" stroke="rgb(142, 198, 63)" stroke-width="4" fill="transparent" />
+            <!-- Clock hands -->
+            <line x1="32" y1="32" x2="32" y2="12" stroke="black" stroke-width="3" /> <!-- Hour hand -->
+            <line x1="32" y1="32" x2="50" y2="32" stroke="black" stroke-width="2" /> <!-- Minute hand -->
+          </svg>
+
+        </div>
+        <h1 style="font-size: 20px;">EXPERIENCE</h1>
+        <p style="font-size: 14px; line-height: 1.1; color: rgb(163, 178, 201);">Years of expertise that translate into
+          success and trust.</p>
+      </div>
+      <!-- 4 -->
+      <div class="mainX">
+        <div
+          style="width: 150px; height: 150px; background: rgb(242, 242, 242); border-radius: 50%; display: flex; justify-content: center; align-items: center;  margin-bottom: 10px;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="75" height="75">
+            <!-- Change width and height here -->
+            <!-- User heads -->
+            <path d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0z" fill="transparent" stroke="black" stroke-width="20" />
+            <path d="M512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0z" fill="transparent" stroke="black" stroke-width="20" />
+            <!-- Main user body (set to red with black border) -->
+            <path
+              d="M0 298.7C0 239.8 47.8 192 106.7 192l42.7 0c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0L21.3 320C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7l42.7 0C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3l-213.3 0z"
+              fill="transparent" stroke="black" stroke-width="20" />
+            <!-- Body outline -->
+            <path d="M224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0z" fill="transparent" stroke="black"
+              stroke-width="20" />
+            <!-- Lower section -->
+            <path
+              d="M128 485.3C128 411.7 187.7 352 261.3 352l117.3 0C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7l-330.7 0c-14.7 0-26.7-11.9-26.7-26.7z"
+              fill="rgb(142, 198, 63)" stroke="black" stroke-width="20" />
+          </svg>
+
+        </div>
+        <h1 style="font-size: 20px;">HAPPY CLIENTS</h1>
+        <p style="font-size: 14px; line-height: 1.1; color: rgb(163, 178, 201);">Putting our clients first with
+          personalized care and attention.</p>
+      </div>
+      <!-- 5 -->
+      <div class="mainX">
+        <div
+          style="width: 150px; height: 150px; background: rgb(242, 242, 242); border-radius: 50%; display: flex; justify-content: center; align-items: center;  margin-bottom: 10px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-messages-square">
+            <path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z" stroke="currentColor" />
+            <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1" fill="rgb(142, 198, 63)" />
+          </svg>
+
+        </div>
+        <h1 style="font-size: 20px;">SUPPORT</h1>
+        <p style="font-size: 14px; line-height: 1.1; color: rgb(163, 178, 201);">Always here to provide reliable
+          assistance when you need it.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div style="background: rgb(242, 242, 242);">
+    <div class="sharp-line"></div>
+    <h1 class="aboutHead">ABOUT <span style="color: rgb(102, 142, 25);">US</span></h1>
+    <div class="aboutUs">
+      <div class="content">
+        <p>
+          At Panacloud, we are pioneers in harnessing the power of Cloud Computing and Artificial Intelligence (AI) to
+          deliver cutting-edge solutions for businesses of all sizes. Our mission is to empower organizations with
+          scalable, secure, and efficient cloud infrastructures while leveraging AI technologies to drive innovation and
+          optimize operations.
+        </p>
+        <p>
+          With a deep commitment to excellence, Panacloud offers a range of services, from cloud strategy and
+          implementation to AI-driven solutions, designed to meet the unique needs of our clients. Whether you're
+          looking to modernize your systems, enhance data analytics, or integrate AI into your processes, Panacloud is
+          your trusted partner in the digital transformation journey.
+        </p>
+
+        <button class="abBut">READ MORE</button>
+      </div>
+      <div class="image">
+        <img src="./images/teamWork.png" alt="High-resolution image" width="800" height="600">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Services -->
+  <div>
+    <div class="serOne">
+      <h1>OUR <span style="color: rgb(102, 142, 25);">SERVICES</span></h1>
+      <p style="color: rgb(154, 164, 179);">we specialize in web development, branding, and marketing services that
+        elevate your online presence and drive business success.</p>
+    </div>
+    <div class="serTwo">
+      <!-- 1 -->
+      <div class="boxDiv" class="card" data-aos="flip-up" data-aos-duration="300">
+        <div class="circleX">
+          <div class="star">&#9733;</div>
+        </div>
+        <div class="x">
+          <h1>Web development</h1>
+          <p style="color: rgb(154, 164, 179);">Our expert team builds responsive, user-friendly websites designed to
+            deliver exceptional experiences across all devices</p>
+          <a style="text-decoration: underline; color: rgb(133, 180, 66);" href="">read more</a>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="boxDiv" class="card" data-aos="flip-up" data-aos-duration="300">
+        <div class="circleX">
+          <div class="star">&#9733;</div>
+        </div>
+        <div class="x">
+          <h1>Blockchain</h1>
+          <p style="color: rgb(154, 164, 179);">Our blockchain services ensure secure, transparent, and decentralized
+            solutions for managing digital transactions </p>
+          <a style="text-decoration: underline; color: rgb(133, 180, 66);" href="">read more</a>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="boxDiv" class="card" data-aos="flip-up" data-aos-duration="300">
+        <div class="circleX">
+          <div class="star">&#9733;</div>
+        </div>
+        <div class="x">
+          <h1>Cloud Computing</h1>
+          <p style="color: rgb(154, 164, 179);">We offer scalable cloud infrastructure services to optimize performance,
+            security, and flexibility for your business</p>
+          <a style="text-decoration: underline; color: rgb(133, 180, 66);" href="">read more</a>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="boxDiv" class="card" data-aos="flip-up" data-aos-duration="300">
+        <div class="circleX">
+          <div class="star">&#9733;</div>
+        </div>
+        <div class="x">
+          <h1>Artificial Intelligence</h1>
+          <p style="color: rgb(154, 164, 179);">Harness the power of AI to automate tasks, gain deep insights, and drive
+            innovation in your business</p>
+          <a style="text-decoration: underline; color: rgb(133, 180, 66);" href="">read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--portfolio  -->
+  <div class="mainPortfolio">
+    <div class="portOne">
+      <h1 style="color: white;">OUR <span style="color: rgb(102, 142, 25);">PORTFOLIO</span></h1>
+      <p style="color: rgb(156, 157, 158);">Our portfolio highlights diverse projects across web development, AI, and
+        cloud computing, showcasing innovation and client success.</p>
+    </div>
+    <div class="portTwo">
+      <h2 data-img="images/web.png" class="active">WEB DEVELOPMENT</h2>
+      <h2 data-img="images/blc.png">BLOCKCHAIN</h2>
+      <h2 data-img="images/clow.jpg">CLOUD COMPUTING</h2>
+      <h2 data-img="images/aiw.jpeg">ARTIFICIAL INTELLIGENCE</h2>
+      <h2 data-img="images/marke.jpg">MARKETING</h2>
+      <h2 data-img="images/adv.jpg">ADVERTISEMENT</h2>
+    </div>
+    <div class="imageDisplay">
+      <img id="portfolioImage" src="images/web.png" alt="High-resolution image" width="800" height="600">
+
+    </div>
+  </div>
+
+
+  <!-- Packages -->
+  <div class="dotted-background">
+    <div class="dotFirst">
+      <h1>Affordable Web Development Packages</h1>
+      <p>Experience the industry's best web development deals at 60% Discount with 100% Money Back Guarntee</p>
+    </div>
+    <div class="mainOffer">
+      <div class="cardOffer">
+        <h1>WEB BASIC PREMIUM</h1>
+        <hr style="height: 1.5px; color: black;">
+        <h1 style="color: rgb(138, 206, 8); font-size: 50px;"><sup>$</sup>859.00</h1>
+        <p style="padding-bottom: 20px; line-height: 1px;"><b><strike>$2148</strike> 60% off!</b></p>
+        <p>Unlimited Pages Website</p>
+        <p>One Design Concept</p>
+        <p>1 Dedicated Developer</p>
+        <p>Turn Around <sub>5</sub>Days</p>
+        <p>10 Stock Photos</p>
+        <p>Free One-Page SEO</p>
+        <p>Free 1 Year Web Hosting</p>
+        <p><b>Free CMS Integration</b></p>
+        <p><b>100%</b> Satisfaction Guaranteed</p>
+        <div class="order-btnCont">
+          <button class="orderBtn">ORDER NOW</button>
+        </div>
+      </div>
+
+
+      <div class="cardOffer centerCard">
+        <h1>WEB BASIC PLUS</h1>
+        <hr style="height: 1.5px; color: black;">
+        <h1 style="color: rgb(138, 206, 8); font-size: 50px;"><sup>$</sup>649.00</h1>
+        <p style="padding-bottom: 20px; line-height: 1px;"><b><strike>$1623</strike> 60% off!</b></p>
+        <p>7 Pages Website</p>
+        <p>One Design Concept</p>
+        <p>1 Dedicated Developer</p>
+        <p>Turn Around <sub>5</sub>Business Days</p>
+        <p>7 Stock Photos</p>
+        <p>Free One-Page SEO</p>
+        <p>W<sub>3</sub>C Certified HTML</p>
+        <p><b>Add CMS for $299</b></p>
+        <p><b>100%</b> Satisfaction Guaranteed</p>
+        <div class="order-btnCont">
+          <button class="orderBtn">ORDER NOW</button>
+        </div>
+      </div>
+
+
+      <div class="cardOffer">
+        <h1>WEB BASIC </h1>
+        <hr style="height: 1.5px; color: black;">
+        <h1 style="color: rgb(138, 206, 8); font-size: 50px;"><sup>$</sup>499.00</h1>
+        <p style="padding-bottom: 20px; line-height: 1px;"><b><strike>$1248</strike> 60% off!</b></p>
+        <p>5 Pages Website</p>
+        <p>One Design Concept</p>
+        <p>1 Dedicated Developer</p>
+        <p>Turn Around <sub>5</sub> Business Days</p>
+        <p>4 Stock Photos</p>
+        <p>Free One-Page SEO</p>
+        <p>Free 1 Year Web Hosting</p>
+        <p><b>Add CMS for $299</b></p>
+        <p><b>100%</b> Satisfaction Guaranteed</p>
+        <div class="order-btnCont">
+          <button class="orderBtn">ORDER NOW</button>
+        </div>
+      </div>
+
+    </div>
+    <div class="packBtn">
+      <button>View All Packages</button>
+    </div>
+  </div>
+
+  <!-- Our process -->
+  <div>
+    <div class="processDiv">
+      <h1>OUR <span style="color: rgb(102, 142, 25);">PROCESS</span></h1>
+      <p style="color: rgb(154, 164, 179);">We start by understanding your goals, then create a tailored plan. From
+        design to development, we keep you involved. After testing, we launch your project and offer ongoing support to
+        ensure success</p>
+    </div>
+
+    <div class="processContainer">
+      <div class="processStep" class="card" data-aos="flip-left" data-aos-duration="400">
+        <div class="numberCircle">1</div>
+        <div class="iconCircle">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 350" width="50" height="60">
+            <!-- Mobile Device -->
+            <rect x="10" y="0" width="180" height="300" rx="20" ry="20" fill="rgb(142, 198, 63)" />
+
+            <!-- Top Padding with Rounded Corners (Top Side) -->
+            <rect x="10" y="0" width="180" height="30" rx="20" ry="20" fill="rgb(103, 142, 25)" />
+
+            <!-- Bottom Padding with Rounded Corners (Bottom Side) -->
+            <rect x="10" y="260" width="180" height="50" rx="20" ry="20" fill="rgb(103, 142, 25)" />
+
+            <!-- Button Shape -->
+            <rect x="70" y="270" width="60" height="20" rx="10" ry="10" fill="white" />
+
+            <!-- Tick Mark Centered with Increased Size -->
+            <path d="M80 160 l20 20 l40 -60" stroke="white" stroke-width="10" fill="none" />
+          </svg>
+
+
+
+        </div>
+        <h1>REQUEST CALL</h1>
+        <p>Initial client discussion begins</p>
+      </div>
+
+      <div class="processStep" class="card" data-aos="flip-left" data-aos-duration="400">
+        <div class="numberCircle">2</div>
+        <div class="iconCircle">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="65" height="70">
+            <!-- Second Message Box (Flipped Horizontally, Positioned Further Below and Right) -->
+            <g transform="scale(-1,1) translate(-700, 160)">
+              <path
+                d="M64 0C28.7 0 0 28.7 0 64L0 352c0 35.3 28.7 64 64 64l96 0 0 80c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416 448 416c35.3 0 64-28.7 64-64l0-288c0-35.3-28.7-64-64-64L64 0z"
+                fill="rgb(103, 142, 25)" />
+            </g>
+
+            <!-- Main Message Box -->
+            <path
+              d="M64 0C28.7 0 0 28.7 0 64L0 352c0 35.3 28.7 64 64 64l96 0 0 80c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416 448 416c35.3 0 64-28.7 64-64l0-288c0-35.3-28.7-64-64-64L64 0z"
+              fill="rgb(142, 198, 63)" />
+
+            <!-- Three Dots on Main Box -->
+            <circle cx="160" cy="200" r="30" fill="white" />
+            <circle cx="270" cy="200" r="30" fill="white" />
+            <circle cx="380" cy="200" r="30" fill="white" />
+          </svg>
+
+        </div>
+        <h1>CONSULTATION</h1>
+        <p>Detailed project requirements gathered</p>
+      </div>
+
+      <div class="processStep" class="card" data-aos="flip-left" data-aos-duration="400">
+        <div class="numberCircle">3</div>
+        <div class="iconCircle">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 490 490" xml:space="preserve" fill="#000000" width="63" height="63">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <g>
+                <g id="XMLID_45_">
+                  <g>
+                    <polygon style="fill:rgb(142, 198, 63);" points="430,110 430,480 60,480 60,10 330,10 330,110">
+                    </polygon>
+                    <polygon style="fill:rgb(103, 142, 25);" points="430,110 330,110 330,10"></polygon>
+                  </g>
+                  <g>
+                    <path style="fill:#ffffff;"
+                      d="M439.976,110c-0.001-2.602-0.992-5.159-2.904-7.071l-100-100c-1.912-1.913-4.47-2.904-7.071-2.904 V0H60c-5.522,0-10,4.477-10,10v470c0,5.523,4.478,10,10,10h370c5.522,0,10-4.477,10-10V110H439.976z M340,34.142L405.857,100H340 V34.142z M70,470V20h250v90c0,5.523,4.478,10,10,10h90v350H70z">
+                    </path>
+                    <path style="fill:#ffffff;"
+                      d="M125,180.858l-17.929-17.929l-14.143,14.143l25,25C119.882,204.024,122.44,205,125,205 s5.118-0.976,7.071-2.929l50-50l-14.143-14.143L125,180.858z">
+                    </path>
+                    <rect x="200" y="150" style="fill:#ffffff;" width="50" height="20"></rect>
+                    <rect x="200" y="180" style="fill:#ffffff;" width="110" height="20"></rect>
+                    <rect x="265" y="150" style="fill:#ffffff;" width="130" height="20"></rect>
+                    <path style="fill:#ffffff;"
+                      d="M125,260.858l-17.929-17.929l-14.143,14.143l25,25C119.882,284.024,122.44,285,125,285 s5.118-0.976,7.071-2.929l50-50l-14.143-14.143L125,260.858z">
+                    </path>
+                    <rect x="200" y="230" style="fill:#ffffff;" width="50" height="20"></rect>
+                    <rect x="200" y="260" style="fill:#ffffff;" width="110" height="20"></rect>
+                    <rect x="265" y="230" style="fill:#ffffff;" width="130" height="20"></rect>
+                    <path style="fill:#ffffff;"
+                      d="M125,340.858l-17.929-17.929l-14.143,14.143l25,25C119.882,364.024,122.44,365,125,365 s5.118-0.976,7.071-2.929l50-50l-14.143-14.143L125,340.858z">
+                    </path>
+                    <rect x="200" y="310" style="fill:#ffffff;" width="50" height="20"></rect>
+                    <rect x="200" y="340" style="fill:#ffffff;" width="110" height="20"></rect>
+                    <rect x="265" y="310" style="fill:#ffffff;" width="130" height="20"></rect>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+
+
+
+        </div>
+        <h1>PLANNING</h1>
+        <p>Strategy and roadmap for execution</p>
+      </div>
+
+      <div class="processStep" class="card" data-aos="flip-left" data-aos-duration="400">
+        <div class="numberCircle">4</div>
+        <div class="iconCircle">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50" height="50">
+            <path
+              d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"
+              fill="rgb(142, 198, 63)" />
+            <circle cx="256" cy="256" r="80" fill="rgb(240, 242, 242)" />
+          </svg>
+
+        </div>
+        <h1>WORK PROCESS</h1>
+        <p>Development and design work in progress</p>
+      </div>
+
+      <div class="processStep" class="card" data-aos="flip-left" data-aos-duration="400">
+        <div class="numberCircle">5</div>
+        <div class="iconCircle">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="58px">
+            <g transform="scale(-1, 1) translate(-512, 0)">
+              <path
+                d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231z"
+                fill="rgb(142, 198, 63)" />
+
+              <path
+                d="M160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1 0 32c0 8.8 7.2 16 16 16l32 0z"
+                fill="rgb(142, 198, 63)" />
+
+              <path
+                d="M362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0z"
+                fill="rgb(103, 142, 25)" />
+
+              <path
+                d="M315.3 186.7l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"
+                fill="rgb(103, 142, 25)" />
+            </g>
+          </svg>
+
+        </div>
+        <h1>CORRECTING</h1>
+        <p>Review and revisions based on feedback</p>
+      </div>
+
+      <div class="processStep" class="card" data-aos="flip-left" data-aos-duration="400">
+        <div class="numberCircle">6</div>
+        <div class="iconCircle">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+            <!-- Square Box -->
+            <rect x="70" y="70" width="60" height="60" rx="5" ry="5" fill="rgb(142, 198, 63)" stroke="rgb(142, 198, 63)"
+              stroke-width="3" />
+
+            <!-- Tick Mark -->
+            <path d="M80 90 l20 20 l45 -45" stroke="green" stroke-width="9" fill="none" />
+          </svg>
+
+        </div>
+        <h1>DELIVER</h1>
+        <p>Final product delivered to client</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- people -->
+  <div style="background: rgb(242, 242, 242);">
+    <div class="sharp-line"></div>
+    <h1 class="aboutHead">PEOPLE <span style="color: rgb(102, 142, 25);">ABOUT US</span></h1>
+    <p style="color: rgb(154, 164, 179);" class="paraPeople">
+      A passionate team transforming ideas into digital solutions. We specialize in web and mobile applications,
+      focusing on your needs for impactful results.
+    </p>
+
+    <div class="arrowPlus">
+      <div class="column">
+        <div class="plusZs">
+          <div class="icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 24 24" fill="none"
+              stroke="rgb(222, 224, 225)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-user-round">
+              <circle cx="12" cy="8" r="5" />
+              <path d="M20 21a8 8 0 0 0-16 0" />
+            </svg>
+          </div>
+          <div class="plusTwo">
+            <h1>Tom R.</h1>
+            <p>Pana Cloud has been instrumental in helping us navigate our digital transformation. Their commitment to
+              quality and customer service is unparalleled. We’re excited to continue our partnership and really !</p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="plusZs">
+          <div class="icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 24 24" fill="none"
+              stroke="rgb(222, 224, 225)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-user-round">
+              <circle cx="12" cy="8" r="5" />
+              <path d="M20 21a8 8 0 0 0-16 0" />
+            </svg>
+          </div>
+          <div class="plusTwo">
+            <h1>Jessica M</h1>
+            <p>The team at Pana Cloud is outstanding! They guided us through the complexities of cloud integration
+              seamlessly. The impact on our productivity has been remarkable, and we couldn’t be happier with the
+              results.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="verticalLine"></div>
+
+      <div class="column">
+        <div class="plusZs">
+          <div class="icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 24 24" fill="none"
+              stroke="rgb(222, 224, 225)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-user-round">
+              <circle cx="12" cy="8" r="5" />
+              <path d="M20 21a8 8 0 0 0-16 0" />
+            </svg>
+          </div>
+          <div class="plusTwo">
+            <h1>David K</h1>
+            <p>Working with Pana Cloud was a game-changer for us. Their expertise in cloud solutions helped us
+              streamline our operations, and their support was exceptional throughout the process. They are a partner we
+              can trust!</p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="plusZs">
+          <div class="icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 24 24" fill="none"
+              stroke="rgb(222, 224, 225)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-user-round">
+              <circle cx="12" cy="8" r="5" />
+              <path d="M20 21a8 8 0 0 0-16 0" />
+            </svg>
+          </div>
+          <div class="plusTwo">
+            <h1>Sarah J.</h1>
+            <p>Pana Cloud has been instrumental in helping us navigate our digital transformation. Their commitment to
+              quality and customer service is unparalleled. We’re excited to continue our partnership and really !</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- people for mobile -->
+
+    <div class="pM">
+
+      <div class="pMM">
+        <div class="icontainer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 24 24" fill="none"
+            stroke="rgb(222, 224, 225)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-user-round">
+            <circle cx="12" cy="8" r="5" />
+            <path d="M20 21a8 8 0 0 0-16 0" />
+          </svg>
+        </div>
+        <div class="plusTwoUi">
+          <h1>Tom R.</h1>
+          <p>Pana Cloud has been instrumental in helping us navigate our digital transformation. Their commitment to
+            quality and customer service is unparalleled. We’re excited to continue our partnership and really !</p>
+        </div>
+      </div>
+
+      <div class="pMM">
+        <div class="icontainer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 24 24" fill="none"
+            stroke="rgb(222, 224, 225)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-user-round">
+            <circle cx="12" cy="8" r="5" />
+            <path d="M20 21a8 8 0 0 0-16 0" />
+          </svg>
+        </div>
+        <div class="plusTwoUi">
+          <h1>Jessica M</h1>
+          <p>The team at Pana Cloud is outstanding! They guided us through the complexities of cloud integration
+            seamlessly. The impact on our productivity has been remarkable, and we couldn’t be happier with the results.
+          </p>
+        </div>
+      </div>
+
+      <div class="pMM">
+        <div class="icontainer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 24 24" fill="none"
+            stroke="rgb(222, 224, 225)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-user-round">
+            <circle cx="12" cy="8" r="5" />
+            <path d="M20 21a8 8 0 0 0-16 0" />
+          </svg>
+        </div>
+        <div class="plusTwoUi">
+          <h1>David K</h1>
+          <p>Working with Pana Cloud was a game-changer for us. Their expertise in cloud solutions helped us streamline
+            our operations, and their support was exceptional throughout the process. They are a partner we can trust!
+          </p>
+        </div>
+      </div>
+
+      <div class="pMM">
+        <div class="icontainer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 24 24" fill="none"
+            stroke="rgb(222, 224, 225)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-user-round">
+            <circle cx="12" cy="8" r="5" />
+            <path d="M20 21a8 8 0 0 0-16 0" />
+          </svg>
+        </div>
+        <div class="plusTwoUi">
+          <h1>Sarah J</h1>
+          <p>Pana Cloud transformed our business with their cutting-edge solutions. Their team was responsive,
+            knowledgeable, and truly understood our needs. We saw significant improvements in efficiency and
+            collaboration. Highly recommended!</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div style="text-align: center; margin-bottom: 1%;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="50" height="50">
+
+        <path d="M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256z" fill="rgb(254, 130, 30)" />
+
+        <path d="M168 256a56 56 0 1 1 112 0 56 56 0 1 1 -112 0z" fill="rgb(254, 189, 25)" />
+
+        <path d="M384 200a56 56 0 1 1 0 112 56 56 0 1 1 0-112z" fill="rgb(254, 189, 25)" />
+      </svg>
+
+    </div>
+    <div class="sharp-line"></div>
+  </div>
+
+
+
+  <!-- Skill -->
+  <div class="mainSkill">
+    <div class="skillOne">
+      <h1>OUR <span style="color: rgb(102, 142, 25);">SKILLS</span></h1>
+      <p style="color: rgb(154, 164, 179); margin-bottom: 3%;">
+        Pana Cloud specializes in web and mobile development, cloud-native solutions, and API integrations. We build
+        scalable, secure, and high-performance systems tailored to your needs, driving impactful results for your
+        business.
+      </p>
+    </div>
+
+    <div class="skillTwo">
+
+      <div class="mainCircles">
+        <div class="progress-circle-1">
+          <div class="progress-fill-1-outer" style="--outer-progress: 45;"></div>
+          <div class="progress-fill-1-inner"></div>
+          <span class="progress-text" style="color: rgb(254, 189, 25);">45%</span>
+        </div>
+        <h3 style="font-size: 14px; font-weight: 700; text-align: center;">WEB DEVELOPMENT</h3>
+      </div>
+
+      <div class="mainCircles">
+        <div class="progress-circle-2">
+          <div class="progress-fill-2-outer"></div>
+          <div class="progress-fill-2-inner"></div>
+          <span class="progress-text" style="color: rgb(239, 65, 54);">60%</span>
+        </div>
+        <h3 style="font-size: 14px; font-weight: 700; text-align: center; ">BLOCKCHAIN</h3>
+      </div>
+
+      <div class="mainCircles">
+        <div class="progress-circle-3">
+          <div class="progress-fill-3-outer"></div>
+          <div class="progress-fill-3-inner"></div>
+          <span class="progress-text" style="color: rgb(142, 198, 63);">75%</span>
+        </div>
+
+        <h3 style="font-size: 14px; font-weight: 700; text-align: center; ">ADVERTISEMENT</h3>
+      </div>
+
+      <div class="mainCircles">
+        <div class="progress-circle-4">
+          <div class="progress-fill-4-outer"></div>
+          <div class="progress-fill-4-inner"></div>
+          <span class="progress-text" style="color: rgb(33, 33, 33);">70%</span>
+        </div>
+        <h3 style="font-size: 14px; font-weight: 700; text-align: center;">MARKETING</h3>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Start project -->
+  <div class="start">
+    <h1>START YOUR NEW PROJECT</h1>
+    <div class="inDiv">
+      <input type="text" id="name" name="name" autocomplete="given-name" placeholder="YOUR NAME">
+      <input type="email" id="email" name="email" autocomplete="given-email" placeholder="YOUR EMAIL">
+      <input type="tel" id="phone" name="phone" autocomplete="off" placeholder="YOUR PHONE">
+      <button type="submit">SEND REQUEST</button>
+    </div>
+    <p>Start your project with our team of experienced professionals, delivering innovative, scalable, and secure
+      solutions designed to meet your business needs.</p>
+  </div>
+
+
+  <!-- contact -->
+  <div style="margin-bottom: 3%;">
+    <div class="headDiveCon">
+      <h1>OUR <span style="color: rgb(102, 142, 25);">CONTACT</span></h1>
+      <p style="color: rgb(154, 164, 179);">Get in touch with us for any inquiries or support. Fill out the form, and
+        we'll respond promptly to assist you.</p>
+    </div>
+    <div class="address">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="30" height="30" fill="rgb(101, 142, 24)">
+        <path
+          d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+      </svg>
+      <h1>Plot #123, Tech Hub Center, Shahrah-e-Faisal, Block 6, PECHS, Karachi, Sindh Pakistan</h1>
+    </div>
+    <div class="cont2">
+      <a href="tel:+92304366719" target="_blank" style=" color: rgb(4, 4, 4);">
+      <span><i class="fa-solid fa-phone" style="color: rgb(101, 142, 24);"></i> +92(304)36-6719</span>
+      </a>
+      <a href="tel:+923170113001" target="_blank" style=" color: rgb(4, 4, 4);">
+      <span><i class="fa-solid fa-phone" style="color: rgb(101, 142, 24);"></i> +92(317)011-3001</span>
+      </a>
+      <a href="mailto:info@website.com" target="_blank" style=" color: rgb(4, 4, 4);">
+      <span><i class="fa-solid fa-envelope" style="color: rgb(101, 142, 24);"></i> info@website.com</span>
+</a>
+    </div>
+  </div>
+
+
+  <div id="chartdiv"></div>
+
+  <!-- Footer -->
+  <div class="footer">
+
+    <div class="f1">
+      <img src="./images/panacloud.png" alt="panacloud" width="140" height="70">
+      <p style="color: white; padding-top: 6%;">Join the cloud revolution with Panacloud—where your potential is
+        limitless, and your success is our mission. Embrace a smarter, more efficient way to work, and let us elevate
+        your business</p>
+      <p style="color: white; font-size: 18px;" class="xaw">©Panacloud <span style="font-weight: 600;">2024</span>
+    </div>
+
+    <div class="f2">
+      <h1 style="color: white; font-size: 22px; font-weight: 700;">SERVICES</h1>
+      <ul style="list-style-type: none;  padding: 0; margin: 0;">
+        <li style="color: white; text-decoration: underline;">Web Development</li>
+        <li style="color: white; text-decoration: underline;">Mobile App Development</li>
+        <li style="color: white; text-decoration: underline;">Cloud Solutions</li>
+        <li style="color: white; text-decoration: underline;">Blockchain Solutions</li>
+        <li style="color: white; text-decoration: underline;">API Development</li>
+        <li style="color: white; text-decoration: underline;">UI/UX Design</li>
+        <li style="color: white; text-decoration: underline;">Marketing</li>
+      </ul>
+    </div>
+    <div class="vertical-line"></div>
+
+    <div class="f3">
+      <h1 style="color: white; font-size: 22px; font-weight: 700;">USEFUL LINKS</h1>
+      <ul style="list-style-type: none; padding: 0; margin: 0; ">
+        <li style="color: white; text-decoration: underline;">Privacy Policy</li>
+        <li style="color: white; text-decoration: underline;">Terms of Service</li>
+        <li style="color: white; text-decoration: underline;">Blog</li>
+        <li style="color: white; text-decoration: underline;">FAQs</li>
+        <li style="color: white; text-decoration: underline;">Careers</li>
+        <li style="color: white; text-decoration: underline;">About Us</li>
+        <li style="color: white; text-decoration: underline;">Support</li>
+      </ul>
+    </div>
+    <div class="vertical-line"></div>
+
+    <div class="f4">
+      <h1 style="color: white; font-size: 22px; font-weight: 700;">CONTACT</h1>
+      <div class="f44">
+        <a href="tel:+92304366719" target="_blank">
+          <p style=" color: white; "><i class=" fa-solid fa-phone" style="color: white;"></i> +92(304)36-6719</p>
+        </a>
+        <a href="tel:+923170113001" target="_blank">
+          <p style="color: white; margin-top: 15px;"><i class="fa-solid fa-phone" style="color: white;"></i>
+            +92(317)011-3001</p>
+        </a>
+        <a href="mailto:info@website.com" target="_blank">
+          <p style=" color: white; margin-top: 15px;"><i class="fa-solid fa-envelope" style="color: white;"></i>
+            info@website.com</p>
+        </a>
+
+      </div>
+      <h1 style=" color: white; font-size: 20px; margin-top: 20%;" class="fus">FOLLOW US</h1>
+      <div class="xse">
+        <a href="https://facebook.com" target="_blank">
+          <i class="fa-brands fa-facebook-f circle" style="
+         background: rgb(48, 48, 48); color: rgb(103, 142, 25);"></i>
+        </a>
+        <a href="https://facebook.com" target="_blank">
+          <i class="fa-brands fa-twitter circle" style="
+         background: rgb(48, 48, 48); color: rgb(103, 142, 25)"></i>
+          <a href="https://facebook.com" target="_blank">
+            <i class="fa-brands fa-google-plus-g circle" style="
+         background: rgb(48, 48, 48); color: rgb(103, 142, 25)"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank">
+            <i class="fa-brands fa-linkedin-in circle" style="
+         background: rgb(48, 48, 48); color: rgb(103, 142, 25)"></i>
+          </a>
+          <a href="https://google.com" target="_blank">
+            <i class="fab fa-youtube circle" style="
+         background: rgb(48, 48, 48); color: rgb(103, 142, 25)"></i>
+          </a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Resources for map chart  -->
+  <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+  <!-- Chart code -->
+  <script>
+    am5.ready(function () {
+
+      // Create root element
+      var root = am5.Root.new("chartdiv");
+
+      // Set themes
+      root.setThemes([
+        am5themes_Animated.new(root)
+      ]);
+
+      // Create the map chart
+      var chart = root.container.children.push(
+        am5map.MapChart.new(root, {
+          panX: "rotateX",
+          panY: "translateY",
+          projection: am5map.geoMercator(),
+          zoomLevel: 2,
+        })
+      );
+
+      // Create main polygon series for countries
+      var polygonSeries = chart.series.push(
+        am5map.MapPolygonSeries.new(root, {
+          geoJSON: am5geodata_worldLow,
+          exclude: ["AQ"]
+        })
+      );
+
+      polygonSeries.mapPolygons.template.setAll({
+        fill: am5.color(0xdadada)
+      });
+
+      // Create point series for markers
+      var pointSeries = chart.series.push(am5map.ClusteredPointSeries.new(root, {}));
+
+      // Create image bullets (location icon)
+      pointSeries.bullets.push(function () {
+        // Create a picture sprite
+        var picture = am5.Picture.new(root, {
+          width: 15,
+          height: 30,
+          src: "data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' width='256' height='256' viewBox='0 0 256 256' xml:space='preserve'%3E%3Cg style='stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;' transform='translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)'%3E%3Cpath d='M 42.485 0.087 C 25.808 1.239 11.394 15.224 9.786 31.863 c -1.248 12.912 4.452 24.569 13.799 31.684 c 8.596 6.543 15.753 14.784 20.468 24.503 L 45 90 l 0.947 -1.953 c 4.722 -9.733 11.906 -17.966 20.505 -24.53 c 8.467 -6.463 13.932 -16.658 13.932 -28.133 C 80.384 15.01 63.165 -1.342 42.485 0.087 z' style='stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(243,116,33); fill-rule: nonzero; opacity: 1;' transform=' matrix(1 0 0 1 0 0) ' stroke-linecap='round'/%3E%3Ccircle cx='45' cy='35.38' r='22.5' style='stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;' transform='  matrix(1 0 0 1 0 0) '/%3E%3C/g%3E%3C/svg%3E",
+          tooltipY: 0,
+          tooltipText: "{title}"
+        });
+
+        return am5.Bullet.new(root, {
+          sprite: picture
+        });
+      });
+
+
+
+      // Set data
+      var cities = [
+        { title: "London", latitude: 51.5002, longitude: -0.1262 },
+        { title: "Gibraltar", latitude: 36.1377, longitude: -5.3453 },
+        { title: "Saint Peter Port", latitude: 49.466, longitude: -2.5522 },
+        { title: "Manama", latitude: 26.1921, longitude: 50.5354 },
+        { title: "Dhaka", latitude: 23.7106, longitude: 90.3978 },
+        { title: "Thimphu", latitude: 27.4405, longitude: 89.673 },
+        { title: "Karachi", latitude: 24.8607, longitude: 67.0011 },
+        { title: "Islamabad", latitude: 33.6751, longitude: 73.0946 },
+        { title: "Manila", latitude: 14.579, longitude: 120.9726 },
+        { title: "Doha", latitude: 25.2948, longitude: 51.5082 },
+        { title: "Riyadh", latitude: 24.6748, longitude: 46.6977 },
+        { title: "Abu Dhabi", latitude: 24.4764, longitude: 54.3705 },
+        { title: "Washington D.C.", latitude: 38.8921, longitude: -77.0241 },
+      ];
+
+      for (var i = 0; i < cities.length; i++) {
+        var city = cities[i];
+        addCity(city.longitude, city.latitude, city.title);
+      }
+
+      function addCity(longitude, latitude, title) {
+        pointSeries.data.push({
+          geometry: { type: "Point", coordinates: [longitude, latitude] },
+          title: title
+        });
+      }
+
+      // Make stuff animate on load
+      chart.appear(1000, 100);
+
+    }); 
+  </script>
+
+  <!-- Local Bootstrap JavaScript (optional) -->
+  <script src="path-to-bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
